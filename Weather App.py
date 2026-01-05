@@ -7,7 +7,7 @@ from PyQt5.QtWidgets import (
 )
 from PyQt5.QtCore import Qt
 # TODO: Get your own API key and paste it here
-API_KEY = "PASTE_YOUR_OWN_OPENWEATHER_API_KEY_HERE"
+API_KEY = "PASTE_YOUR_OWN_WEATHER_API_KEY_HERE"
 
 class WeatherApp(QWidget):
     def __init__(self):
@@ -155,8 +155,10 @@ class WeatherApp(QWidget):
             return
 
         self.status_label.setText("⏳ Fetching weather...")
-        # TODO: Replace with the actual Weather Map API URL
-        url = f"PUT_API_URL_HERE/weather?q={city}&appid={API_KEY}"
+        # TODO: Replace with the full request URL from your weather API provider
+        # Example format (varies by provider):
+        # https://<base-url>/<endpoint>?<query-parameters>
+        url = "YOUR_FULL_API_REQUEST_URL_HERE"
 
         try:
             response = requests.get(url)
@@ -258,6 +260,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 
