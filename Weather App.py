@@ -6,7 +6,7 @@ from PyQt5.QtWidgets import (
     QPushButton, QVBoxLayout, QHBoxLayout, QComboBox
 )
 from PyQt5.QtCore import Qt
-
+# TODO: Get your own API key and paste it here
 API_KEY = "PASTE_YOUR_OWN_OPENWEATHER_API_KEY_HERE"
 
 class WeatherApp(QWidget):
@@ -155,7 +155,8 @@ class WeatherApp(QWidget):
             return
 
         self.status_label.setText("⏳ Fetching weather...")
-        url = f"https://api.openweathermap.org/data/2.5/weather?q={city}&appid={API_KEY}"
+        # TODO: Replace with the actual OpenWeatherMap API URL
+        url = f"PUT_API_URL_HERE/weather?q={city}&appid={API_KEY}"
 
         try:
             response = requests.get(url)
@@ -257,4 +258,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
