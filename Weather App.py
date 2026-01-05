@@ -7,7 +7,7 @@ from PyQt5.QtWidgets import (
 )
 from PyQt5.QtCore import Qt
 # TODO: Get your own API key and paste it here
-API_KEY = "PASTE_YOUR_OWN_WEATHER_API_KEY_HERE"
+API_KEY = "PASTE_YOUR_OWN_API_KEY_HERE"
 
 class WeatherApp(QWidget):
     def __init__(self):
@@ -260,6 +260,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 
