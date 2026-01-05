@@ -155,7 +155,7 @@ class WeatherApp(QWidget):
             return
 
         self.status_label.setText("⏳ Fetching weather...")
-        # TODO: Replace with the actual OpenWeatherMap API URL
+        # TODO: Replace with the actual Weather Map API URL
         url = f"PUT_API_URL_HERE/weather?q={city}&appid={API_KEY}"
 
         try:
@@ -258,5 +258,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
